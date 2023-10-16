@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS popUp</title>
+</head>
+
+<body>
+
+    <h1>1. Alert box</h1>
+
+    <button onclick="funAlert()">
+        click me to Alert box
+    </button>
+
+    <h1>2. Confirm box</h1>
+
+    <button onclick="funconfirm()">
+        click me to confirm box
+    </button>
+
+    <h2></h2>
+
+    <h1>3. Prompt box</h1>
+
+    <button onclick="funpromt()">
+        click me to change the background color
+    </button>
+
+    <h2 id="bgcolor"></h2>
+
+    <script>
+        function funAlert() {
+            alert("HI, hello myself Palash here")
+        };
+
+        var a = document.querySelector("h2");
+        function funconfirm() {
+            var r = 0
+            var res = confirm("Press a button!");
+            if (res) {
+                a.innerHTML = "you have used the Confirm button";
+            } else {
+                a.innerHTML = "you have not used the Confirm button";
+            }
+        };
+
+        var b = document.getElementById("bgcolor");
+        function funpromt() {
+            var lep = prompt("Enter a valid color");
+            if (lep) {
+                document.body.style.background = lep;
+            } else {
+                b.innerHTML = "Use valid Color name";
+            }
+        };
+    </script>
+</body>
+
+</html>
