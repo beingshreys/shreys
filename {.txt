@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+html body {
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    margin: 45px;
+}
+
+h1 {
+    margin: 15px;
+}
+
+h2 {
+    font-size: 35px;
+    margin: 35px;
+}
