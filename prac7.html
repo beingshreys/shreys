@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <h1></h1>
+    <script>
+        var num1 = parseFloat(prompt("Enter first number"));
+        var sign = prompt('Enter operator to perform the calculation ( either +, -, * or / ): ');
+        var num2 = parseFloat(prompt('Enter the second number: '));
+
+        var d = document.querySelector("h1");
+        var result; 
+
+        if (sign == '+') { 
+            result = num1 + num2;
+        }
+        else if (sign == '-') { 
+            result = num1 - num2;
+        }
+        else if (sign == '*') { 
+            result = num1 * num2;
+        }
+        else {
+            result = num1 / num2; 
+        }  
+
+        d.innerHTML = `Total result ${result}`;
+    </script>
+</body>
+
+</html>
